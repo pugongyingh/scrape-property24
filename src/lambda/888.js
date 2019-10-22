@@ -9,12 +9,7 @@ exports.handler = function (event, context, callback) {
         method: 'POST',
         data: `keyword=${stuid}&ok=%B2%E9%D5%D2`,
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        responseType: 'arraybuffer',
-        transformResponse: gbkTransform,
-        proxy: {
-            host: 'neauproxy.feit.me',
-            port: 6000,
-        }
+        responseType: 'text/html'
     };
 
     let result;
