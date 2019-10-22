@@ -40,7 +40,7 @@ exports.handler = function (event, context, callback) {
 
     // can restrict HTTP method here
     //if (event.httpMethod === 'GET') {        
-    test();
+    
     //}
 
 } // exports.handler
