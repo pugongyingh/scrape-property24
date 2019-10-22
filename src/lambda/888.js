@@ -3,11 +3,11 @@ const cheerio = require('cheerio');
 
 exports.handler = function (event, context, callback) {
 
-    const url = 'http://202.118.167.76/ksap/all.asp';
+    const url = 'https://m.zhouyi.cc/bazi/sm/bazi.php';
     const query = {
         url,
         method: 'POST',
-        data: `keyword=${stuid}&ok=%B2%E9%D5%D2`,
+        data: `txtName=%E6%9D%8E%E6%98%8E&rdoSex=1&data_type=0&cboYear=2008&cboMonth=10&cboDay=21&cboHour=21&cboMinute=20&pid=&cid=%E9%80%89%E6%8B%A9%E5%9F%8E%E5%B8%82`,
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         responseType: 'text/html'
     };
